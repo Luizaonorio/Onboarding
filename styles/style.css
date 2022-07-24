@@ -1,0 +1,89 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container {
+  height: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 34px;
+}
+.container .informacoes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.container .informacoes .img__c {
+  width: 100%;
+}
+.container .informacoes .img__c .img__geral {
+  width: 100%;
+}
+.container .informacoes h1 {
+  text-align: center;
+  padding: 7px 0 26px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+.container .informacoes p {
+  text-align: center;
+  font-weight: 400;
+}
+
+.funcionalidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.funcionalidades .botoes__pags {
+  display: flex;
+}
+.funcionalidades .botoes__pags a {
+  width: 12px;
+  height: 12px;
+  margin: 0 5.6px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.funcionalidades .botoes__pags a:hover {
+  background-color: #92E3A9;
+  border-color: #92E3A9;
+  transition: 0.3s;
+}
+.funcionalidades .botao__principal {
+  width: 100%;
+  margin: 63px 0 42px 0;
+  color: #FFFFFF;
+  background-color: #92E3A9;
+  box-shadow: 0px 4px 10px #A1C3FC;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+}
+.funcionalidades .botao__principal:hover {
+  background-color: rgb(68, 136, 190);
+  transition: 0.8s;
+}
+.funcionalidades .botao__skip {
+  color: #92E3A9;
+  text-decoration: none;
+}
+.funcionalidades .botao__skip:hover {
+  color: rgb(68, 136, 190);
+  transition: 0.8s;
+}
+
+@media screen and (min-width: 426px) {
+  .container {
+    max-width: 425px;
+  }
+  .funcionalidades .botao__principal {
+    width: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */
