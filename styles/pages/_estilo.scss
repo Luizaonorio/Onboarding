@@ -1,0 +1,142 @@
+@import '../abstract/variaveis';
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 34px;
+  .informacoes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+    .img__c {
+      width: 100%;
+      .img__geral {
+        width: 100%;
+      }
+    }
+    h1 {
+      text-align: center;
+      padding: 7px 0 26px 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    p {
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+
+  .funcionalidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .botoes__pags {
+      display: flex;
+        .botoes {
+          width: 10px;
+          height: 10px;
+          margin: 0 5.6px;
+          border: 1px solid #000000;
+          border-radius: 50%;
+        }
+        .botao_ativo {
+          background-color: $corprincipal;
+          border: 1px solid $corprincipal;
+        }
+
+      // a:hover {
+      //   background-color: $corprincipal;
+      //   border-color: $corprincipal;
+      //   transition: 0.3s;
+      // }
+    }
+    .botao__principal {
+      width: 100%;
+      margin: 63px 0 42px 0;
+      color: $cortextobotao;
+      background-color: $corprincipal;
+      box-shadow: 0px 4px 10px #A1C3FC;
+      padding: 15px 0;
+      text-align: center;
+      text-decoration: none;
+    }
+    .botao__principal:hover {
+      background-color: $hover;
+      transition: 0.8s;
+    }
+
+    .botao__skip {
+      color: $corprincipal;
+      text-decoration: none;
+    }
+    .botao__skip:hover {
+      color: $hover;
+      transition: 0.8s;
+    }
+  }
+}
+
+@media (min-width: 426px) {
+  .container {
+    max-width: 360px;
+  }
+}
+
+@media (min-width: 320px) and (max-width:351px) {
+  #pagethree {
+    p {
+      margin-top: 6px;
+    }
+  }
+}
+
+@media (min-width: 351px) and (max-width:361px) {
+  #pagethree {
+    .informacoes {
+      margin-bottom: 46px;
+    }
+  }
+}
+
+#pageone:target {
+  display: flex;
+  flex-direction: column;
+}
+
+#pagetwo {
+  display: none;
+}
+
+#pagetwo:target {
+  display: flex;
+  flex-direction: column;
+}
+
+#pagethree {
+  display: none;
+}
+
+#pagethree:target {
+  display: flex;
+  flex-direction: column;
+}
+
+#pagetwo:target ~ #pageone {
+  display: none;
+}
+
+#pagethree:target ~ #pageone {
+  display: none;
+}
